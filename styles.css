@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background-color:#F4EEE0;
+}
+
+.navbar{
+   padding:2rem;
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.sandwich_icon{
+    display:none;
+}
+
+a{
+    text-decoration: none;
+    padding-left:1.5rem;
+    text-transform: capitalize;
+}
+
+.button_1{
+    padding:0.5rem 0.8rem;
+    margin-left:1rem;
+    text-transform:capitalize;
+    color:white;
+    background-color:#263A29;
+    font-weight: bold;
+}
+
+.section1{
+    display:flex;
+    flex-direction: row;
+    margin-top:1rem;
+}
+
+.section_1_1{
+    width:70vw;
+}
+
+.tagline{
+    font-family: 'Inter', sans-serif;
+    font-size:50px;
+    padding-left:5rem;
+    padding-top:5rem;
+    width:60vw;
+}
+
+.tagline_desc{
+    padding-left:5rem;
+    padding-top:0.5rem;
+    margin:0;
+    width:55vw;
+}
+
+.section_1_tag_desc{
+    padding-top:1.5rem;
+    width:26vw;
+}
+
+.hero_img{
+    width:300px;
+    height:370px;
+    padding-top:2rem;
+}
+
+.section_1_button{
+    margin-left:5rem;
+    margin-top:1rem;
+}
+
+.section_1_ratings{
+    display:flex; 
+    flex-direction:row;
+    column-gap:10px;
+    justify-content:last baseline;
+}
+
+.section_1_logos{
+    width:30px;
+    margin:0.5rem;
+}
+
+.section_2_footer{
+    display:flex;
+    justify-content:center;
+    column-gap:2rem;
+    padding-bottom:3rem;
+}
+
+
+@media (max-width:420px){
+    *{
+        overflow-x:hidden;
+    }
+    
+    .navbar{
+        justify-content:space-between;
+        padding-left:0;
+    }
+    
+    .sandwich_icon{
+        display:block;
+    }
+
+    .navbar_items{
+        display:none;
+    }
+
+    .navbar_links{
+        display:none;
+    }
+    
+    .hero_img{
+        width:0;
+        height:0;
+    }
+
+    .section_1_1{
+        width:100vw;
+    }
+
+    .tagline{
+        font-size:35px;
+        padding-left:1.5rem;
+        padding-top:1rem;
+        width:90vw;
+    }
+
+    .tagline_desc{
+        padding-left:1.5rem;
+        padding-top:0.5rem;
+        margin:0;
+        width:100vw;
+    }
+
+    .section_1_button{
+        margin-left:1.5rem;
+        margin-top:1rem;
+    }
+
+    .section_1_tag_desc{
+        padding-top:1.5rem;
+        width:60vw;
+        font-size:15px;
+    }
+    .section_1_logos{
+        width:20px;
+        margin:0.5rem;
+    }
+
+    .section_2_footer{
+        display:flex;
+        flex-wrap:wrap;
+        margin-left:1rem;
+        margin-right:1rem;
+        row-gap:20px;
+    }
+
+    .section_2_footer>img{
+        width:170px;
+        height:170px;
+        height:min-content;
+    }
+}
